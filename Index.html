@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="v41oeKja1czPE6se2fyohRMIG8nykmetWIqF7SdRdcQ" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Joseph Ogutu – Software Engineer & AI Developer from Nairobi, Kenya. Specializing in Python, Django, AI/ML, and scalable full-stack systems." />
+  <title>Joseph Ogutu – Software Engineer & AI Developer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Joseph Ogutu – Software Engineer & AI Developer" />
+  <meta property="og:description" content="Building intelligent, scalable software with Python, AI, and cloud technologies." />
+  <meta property="og:image" content="https://JosephOgutu.com/jose%20pic.png" />
+  <meta property="og:url" content="https://josephogutu.com" />
+  <meta property="og:type" content="website" />
+
+  <title>Joseph Ogutu – Software Engineer & AI Developer</title>
+  <link rel="icon" type="image/png" href="icons/JosephOgutuLogo.png" />
+
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+<!-- Notification Toast -->
+<div class="toast" id="welcomeToast">
+  <div class="toast-header">
+    <div class="toast-title">
+      <i class='bx bx-bell toast-icon'></i>
+      <span>Welcome!</span>
+    </div>
+    <button class="toast-close" onclick="closeToast()">
+      <i class='bx bx-x'></i>
+    </button>
+  </div>
+  <div class="toast-body">
+    Thanks for visiting my portfolio! Feel free to explore my projects and get in touch.
+  </div>
+</div>
+
+<!-- Sticky Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <img src="icons/JosephOgutuLogo.png" alt="Joseph Ogutu Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='JO'">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="contact-button-nav">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <i class='bx bx-menu'></i>
+    </div>
+  </div>
+</nav>
+
+<!-- Dark Mode Toggle -->
+<div class="darkmode" aria-label="Toggle dark mode">
+  <i class='bx bx-moon'></i>
+</div>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/254792475624?text=Hi%20Joseph,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+   target="_blank" 
+   class="whatsapp-float" 
+   aria-label="Contact via WhatsApp">
+  <i class='bx bxl-whatsapp'></i>
+</a>
+
+<!-- Hero -->
+<header class="home" id="home">
+  <div class="home-container">
+    <div class="info">
+      <h4>Welcome</h4>
+      <h2>I am <span>Joseph Ogutu.</span></h2>
+      <h3><span id="text"></span></h3>
+      <p>
+        I am a software engineer specializing in full-stack development and Artificial intelligence.
+        My work focuses on building scalable, secure, and user-centric systems that solve real-world problems.
+      </p>
+      <p>
+        I bring deep expertise in Python, Django, and modern web architectures, with a growing focus on
+        large language models (LLMs), natural language processing, and generative AI.
+      </p>
+      <p>
+        Committed to engineering excellence, I design systems that are performant, maintainable, and future-proof.
+      </p>
+      <div style="margin-top: 1.5rem;">
+        <a class="content-download button-main button-scheme" href="https://online.fliphtml5.com/Joseph_Ogutu/majl/#p=1" target="_blank" style="display: inline-block; background: var(--color-primary); color: #000; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 6px;">View CV</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="Img/Ogutu.jpg" alt="Joseph Ogutu" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\'%3E%3Crect fill=\'%23ddd\' width=\'400\' height=\'400\'/%3E%3Ctext fill=\'%23666\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EJoseph Ogutu%3C/text%3E%3C/svg%3E'">
+    </div>
+  </div>
+</header>
+
+<!-- Experience -->
+<section id="experience" class="timeline-section">
+  <div class="container">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>System & Knowledge Management Intern</h3>
+            <span class="timeline-date">July 2025 – Present</span>
+          </div>
+          <p><strong>Kenya Water Sanitation Civil Society Network</strong> | Nairobi, Kenya</p>
+          <ul>
+            <li>Architected and develop an AI-powered SaaS platform using Python, Django, and LLMs.</li>
+            <li>Managed KEWASNET System, delivered 3 major product releases ahead of schedule.</li>
+            <li>Integrated RAG systems for document Q&A, improving customer response time by 60%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Web Developer - Freelancing</h3>
+            <span class="timeline-date">Dec 2024 – May 2025</span>
+          </div>
+          <p><strong>ACCRAKH Institute</strong> | Nairobi, Kenya</p>
+          <ul>
+            <li>Built internal financial reconciliation tool with Python, pandas, and Celery – reduced manual effort by 40%.</li>
+            <li>Designed RESTful APIs with Django REST Framework for internal teams.</li>
+            <li>Optimized PostgreSQL queries, cutting report generation time from 5min to 15sec.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Project Course Work</h3>
+            <span class="timeline-date">Aug 2024 – Nov 2024</span>
+          </div>
+          <p><strong>College Management System</strong> | Nairobi, Kenya</p>
+          <ul>
+            <li>Redesigned college website using HTML, CSS, Bootstrap – improved mobile UX by 70%.</li>
+            <li>Implemented contact form with MySQL – captured 500+ student inquiries in 3 months.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="timeline-section">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Machine Learning Engineering</h3>
+            <span class="timeline-date">2024 – 2025</span>
+          </div>
+          <p><strong>Columbia University</strong> | New York, USA</p>
+          <ul>
+            <li>Relevant Coursework: Algorithms, Databases, Web Development, Machine Learning.</li>
+            <li>Capstone Project: "AI-Powered Student Performance Predictor" – built with Python, scikit-learn, Django.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Software Engineering</h3>
+            <span class="timeline-date">2022 – 2024</span>
+          </div>
+          <p><strong>Bell College</strong> | Nairobi, Kenya</p>
+          <ul>
+            <li>Learned how to design, develop, test, and maintain reliable, efficient, and scalable software systems using engineering principles and modern tools.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/Expense Tracker.png" alt="Expense Management Application" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>Expense Tracker</div>'">
+        </div>
+        <div class="project-content">
+          <h3>Expense Management Application</h3>
+          <p>Crafted AI powered comprehensive full-stack expense management application. facilitating effortless expense tracking & management.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>Chart.js</span>
+            <span>Open API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joseph-Ogutu/Expense-Management-Application" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/Job Scrapper.jpg" alt="Job Scrapper Tool" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>Job Scrapper</div>'">
+        </div>
+        <div class="project-content">
+          <h3>Job Scrapper Tool</h3>
+          <p>A Django-based job scraping application that extracts job listings from Indeed, LinkedIn, and Glassdoor, stores them in a PostgreSQL database.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>BeautifulSoup</span>
+            <span>Selenium</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joseph-Ogutu/jobscraper" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/Reconciliation Tool.png" alt="Reconciliation Tool" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>Reconciliation Tool</div>'">
+        </div>
+        <div class="project-content">
+          <h3>Reconciliation Tool</h3>
+          <p>A Django-based web application for comparing transaction data between an internal system export and a payment processor's statement.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>Chart.js</span>
+            <span>Bootstrap5</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joseph-Ogutu/Reconciliation-Tool" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/ACCRAKH Page.png" alt="ACCRAKH Institute Website" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>ACCRAKH Website</div>'">
+        </div>
+        <div class="project-content">
+          <h3>ACCRAKH Institute Website</h3>
+          <p>A Nairobi-based training and capacity-building organization. The site showcases programs, events, and institutional information.</p>
+          <div class="project-tech">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://accrakhinstitute.co.ke/" target="_blank" class="project-link">Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/AI Sales Agent.avif" alt="AI Sales Agent Assistant" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>AI Sales Agent</div>'">
+        </div>
+        <div class="project-content">
+          <h3>AI Sales Agent</h3>
+          <p>A secure, Django-based automation platform designed for B2B sales, tailored for small and medium businesses (SMBs).</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>OpenAI API</span>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joseph-Ogutu/Sales-Agent-Assistant" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="Img/Admin1.png" alt="College Management System" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#ddd;color:#666;font-weight:600\'>College System</div>'">
+        </div>
+        <div class="project-content">
+          <h3>College Management System</h3>
+          <p>This system serves as a comprehensive platform for administrators, staff, and students, facilitating efficient communication and management of academic activities.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>WebSockets</span>
+            <span>Ajax</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joseph-Ogutu/Bell_College_Management_System" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="skills" id="skills">
+  <h4>Technical Expertise</h4>
+  <div class="cards">
+    <div class="skill-card"><img src="icons/python.svg" alt="python"><h2>Python</h2></div>
+    <div class="skill-card"><img src="icons/django.svg" alt="django"><h2>Django</h2></div>
+    <div class="skill-card"><img src="icons/html.svg" alt="html"><h2>HTML5</h2></div>
+    <div class="skill-card"><img src="icons/css.svg" alt="css"><h2>CSS3</h2></div>
+    <div class="skill-card"><img src="icons/js.svg" alt="JavaScript"><h2>JavaScript</h2></div>
+    <div class="skill-card"><img src="icons/git.svg" alt="Git"><h2>Git</h2></div>
+    <div class="skill-card"><img src="icons/mysql.svg" alt="MySQL"><h2>MySQL</h2></div>
+    <div class="skill-card"><img src="icons/postgresql.svg" alt="postgresql" height="90px" width="90px"><h2>PostgreSQL</h2></div>
+    <div class="skill-card"><img src="icons/php.svg" alt="php" height="90px" width="90px"><h2>PHP</h2></div>
+    <div class="skill-card"><img src="icons/Tailwind_CSS_Logo.svg" alt="Tailwind"><h2>Tailwind</h2></div>
+    <div class="skill-card"><img src="icons/hf-logo.png" alt="Hugging face" height="90px" width="90px"><h2>Hugging Face</h2></div>
+    <div class="skill-card"><img src="icons/Grafana_logo.png" alt="grafana" height="90px" width="90px"><h2>Grafana</h2></div>
+    <div class="skill-card"><img src="icons/Promethues.png" alt="Promethues" height="90px" width="90px"><h2>Prometheus</h2></div>
+    <div class="skill-card"><img src="icons/Docker.png" alt="Docker" height="90px" width="90px"><h2>Docker</h2></div>
+    <div class="skill-card"><img src="icons/Kubernetes-Logo.png" alt="Kubernetes" height="90px" width="90px"><h2>Kubernetes</h2></div>
+    <div class="skill-card"><img src="icons/RabbitMQ.png" alt="RabbitMQ" height="90px" width="90px"><h2>RabbitMQ</h2></div>
+    <div class="skill-card"><img src="icons/langsmith-color.svg" alt="LangChain" height="90px" width="90px"><h2>LangChain</h2></div>
+    <div class="skill-card"><img src="icons/Weight & Biases.jpeg" alt="weight & Biases" height="70px" width="70px"><h2>Weight & Biases</h2></div>
+    <div class="skill-card"><img src="icons/Colab.png" alt="Colab" height="70px" width="70px"><h2>Google Colab</h2></div>
+    <div class="skill-card"><img src="icons/anaconda-seeklogo.png" alt="anaconda logo"  width="90px"><h2>Anaconda</h2></div>
+    <div class="skill-card"><img src="icons/amazon-web-services.svg" alt="aws" height="90px" width="90px"><h2>AWS</h2></div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>Get to Know Me</h2>
+    <div class="testimonials-grid">
+      
+      
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">
+          Joseph delivered an exceptional AI-powered expense tracking system that exceeded our expectations. His expertise in Django and attention to detail made the entire process smooth and efficient. Highly recommend!
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            PO
+          </div>
+          <div class="author-info">
+            <h4>Paul Odhiambo</h4>
+            <p>CEO, RUMI Technologies</p>
+          </div>
+        </div>
+        <div class="testimonial-rating">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">
+          Working with Joseph was a game-changer for our organization. He built a robust reconciliation tool that saved us countless hours. His technical skills and professionalism are outstanding.
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">DM</div>
+          <div class="author-info">
+            <h4>David Mwangi</h4>
+            <p>Director, ACCRAKH Institute</p>
+          </div>
+        </div>
+        <div class="testimonial-rating">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">
+          Joseph's expertise in full-stack development and AI integration is remarkable. He delivered our college management system on time and with excellent quality. A true professional who understands both technology and business needs.
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PN</div>
+          <div class="author-info">
+            <h4>Peter Njoroge</h4>
+            <p>IT Manager, Bell College</p>
+          </div>
+        </div>
+        <div class="testimonial-rating">★★★★★</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <div class="contact-container">
+    <form id="contact-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname" required>
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" id="subject" required>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
+      <button type="submit">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+    <div class="cube-container">
+      <p>
+        I see ideas in motion. I build systems in harmony. 
+        This sphere is how I understand innovation:  <strong>limitless and alive </strong> always shifting, never confined.
+      </p>
+      <canvas id="cube-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Footer with Social Icons -->
+<footer class="footer">
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/Joseph-Ogutu" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <img src="LinkedIn Icon.png" alt="LinkedIn" onerror="this.outerHTML='<i class=\'bx bxl-linkedin\' style=\'font-size:30px;color:#0077b5\'></i>'">
+    </a>
+    <a href="https://www.instagram.com/josephodhiambo396/" target="_blank" class="social-icon" aria-label="Instagram">
+      <img src="Instagram Icon.png" alt="Instagram" onerror="this.outerHTML='<i class=\'bx bxl-instagram\' style=\'font-size:30px;color:#E4405F\'></i>'">
+    </a>
+    <a href="https://x.com/ogutu_joseph298" target="_blank" class="social-icon" aria-label="Twitter">
+      <img src="Twitter.png" alt="Twitter" onerror="this.outerHTML='<i class=\'bx bxl-twitter\' style=\'font-size:30px;color:#1DA1F2\'></i>'">
+    </a>
+    <a href="https://www.tiktok.com/@joseph_ogutu0" target="_blank" class="social-icon" aria-label="TikTok">
+      <img src="TikTok Icon.png" alt="TikTok" onerror="this.outerHTML='<i class=\'bx bxl-tiktok\' style=\'font-size:30px;color:#000\'></i>'">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61564942852480" target="_blank" class="social-icon" aria-label="Facebook">
+      <img src="Facebook icon.png" alt="Facebook" onerror="this.outerHTML='<i class=\'bx bxl-facebook\' style=\'font-size:30px;color:#1877F2\'></i>'">
+    </a>
+  </div>
+
+  <p>Designed with 💚 by <a href="https://github.com/Joseph-Ogutu" target="_blank">Joseph Ogutu</a>.</p>
+</footer>
+
+<!-- Scroll to Top -->
+<a href="#home" class="scroll-to-up" aria-label="Scroll to top">
+  <i class="bx bx-up-arrow-alt"></i>
+</a>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+  // Show welcome toast after 5 seconds
+  setTimeout(() => {
+    document.getElementById('welcomeToast').classList.add('show');
+    // Auto hide after 8 seconds
+    setTimeout(() => {
+      closeToast();
+    }, 8000);
+  }, 5000);
+
+  function closeToast() {
+    document.getElementById('welcomeToast').classList.remove('show');
+  }
+
+  // Typed.js
+  new Typed("#text", {
+    strings: ["Full-stack Developer.", "Software Engineer.", "AI/ML Engineer."],
+    loop: true,
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1200
+  });
+
+  // Dark mode
+  document.querySelector('.darkmode').addEventListener('click', () => {
+    document.body.classList.toggle('night');
+  });
+
+  // Navbar scroll effect
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('.nav-link, .contact-button-nav').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Scroll to top
+  const scrollToTop = document.querySelector('.scroll-to-up');
+  window.addEventListener('scroll', () => {
+    scrollToTop.classList.toggle('show', window.scrollY > 300);
+  });
+
+  // Contact form
+  document.getElementById('contact-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    const msg = document.getElementById('form-message');
+    const original = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    msg.textContent = '';
+
+    try {
+      const res = await fetch('https://formspree.io/f/xzzknyvl', {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        msg.style.color = '#0f0';
+        msg.textContent = 'Message sent to Joseph successfully.';
+        e.target.reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      msg.style.color = '#ff4444';
+      msg.textContent = 'Failed to send. Please try again or email me directly.';
+    } finally {
+      btn.textContent = original;
+      btn.disabled = false;
+    }
+  });
+
+  // ===== 3D INTERACTIVE PARTICLE SPHERE =====
+  (function() {
+    const canvas = document.getElementById('cube-canvas');
+    if (!canvas) return;
+
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    camera.position.z = 300;
+    
+    const renderer = new THREE.WebGLRenderer({ 
+      canvas: canvas, 
+      antialias: true, 
+      alpha: true 
+    });
+    renderer.setSize(width, height);
+    renderer.setClearColor(0x000000, 0);
+    
+    // Create particle sphere
+    const particleCount = 1000;
+    const particles = new THREE.BufferGeometry();
+    const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+    
+    const radius = 100;
+    const isDark = document.body.classList.contains('night') || document.body.classList.contains('dark-mode');
+    
+    for (let i = 0; i < particleCount; i++) {
+      // Distribute particles on sphere surface using Fibonacci sphere algorithm
+      const phi = Math.acos(-1 + (2 * i) / particleCount);
+      const theta = Math.sqrt(particleCount * Math.PI) * phi;
+      
+      const x = radius * Math.cos(theta) * Math.sin(phi);
+      const y = radius * Math.sin(theta) * Math.sin(phi);
+      const z = radius * Math.cos(phi);
+      
+      positions[i * 3] = x;
+      positions[i * 3 + 1] = y;
+      positions[i * 3 + 2] = z;
+      
+      // Green color with variations
+      colors[i * 3] = 0;
+      colors[i * 3 + 1] = 0.8 + Math.random() * 0.2;
+      colors[i * 3 + 2] = 0;
+    }
+    
+    particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    
+    const particleMaterial = new THREE.PointsMaterial({
+      size: 3,
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.8,
+      blending: THREE.AdditiveBlending
+    });
+    
+    const particleSystem = new THREE.Points(particles, particleMaterial);
+    scene.add(particleSystem);
+    
+    // Mouse interaction
+    const mouse = { x: 0, y: 0 };
+    const target = { x: 0, y: 0 };
+    
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left) / width) * 2 - 1;
+      mouse.y = -((e.clientY - rect.top) / height) * 2 + 1;
+    });
+    
+    // Animation
+    let frame = 0;
+    function animate() {
+      requestAnimationFrame(animate);
+      frame++;
+      
+      // Smooth mouse follow
+      target.x += (mouse.x * 50 - target.x) * 0.05;
+      target.y += (mouse.y * 50 - target.y) * 0.05;
+      
+      // Rotate sphere
+      particleSystem.rotation.y += 0.001;
+      particleSystem.rotation.x = target.y * 0.01;
+      particleSystem.rotation.y += target.x * 0.0005;
+      
+      // Pulse effect
+      const scale = 1 + Math.sin(frame * 0.01) * 0.05;
+      particleSystem.scale.set(scale, scale, scale);
+      
+      renderer.render(scene, camera);
+    }
+    
+    animate();
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      const newWidth = canvas.clientWidth;
+      const newHeight = canvas.clientHeight;
+      
+      renderer.setSize(newWidth, newHeight);
+      camera.aspect = newWidth / newHeight;
+      camera.updateProjectionMatrix();
+    });
+    
+    // Update colors on theme change
+    document.querySelector('.darkmode').addEventListener('click', function() {
+      setTimeout(() => {
+        const isDark = document.body.classList.contains('night') || document.body.classList.contains('dark-mode');
+        const colorAttr = particles.getAttribute('color');
+        for (let i = 0; i < particleCount; i++) {
+          colorAttr.array[i * 3 + 1] = isDark ? 0.8 + Math.random() * 0.2 : 0.7 + Math.random() * 0.3;
+        }
+        colorAttr.needsUpdate = true;
+      }, 100);
+    });
+  })();
+</script>
+</body>
+</html>
