@@ -12,7 +12,7 @@ body{
     place-items: center;
     height: 100vh;
     width: 100%;
-    background: #111;
+    background: #0049B7;
 }
 
 .container{
@@ -25,7 +25,7 @@ body{
 
 .icon{
     position: relative;
-    background: #fff;
+    background: #FFF685;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -48,7 +48,7 @@ body{
     position: absolute;
     top: 0;
     font-size: 14px;
-    background: #fff;
+    background: #00DDFF;
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ body{
     bottom: -3px;
     width: 8px;
     height: 8px;
-    background: #fff;
+    background: #00DDFF;
     transform: translate(-50%) rotate(45deg);
     transition: all .3s;
 }
@@ -78,7 +78,7 @@ body{
 .icon:hover,
 .icon:hover .tooltip,
 .icon:hover .tooltip::before{
-    background: var(--bg);
+    background: #0049B7;
     color: #fff;
 }
 
