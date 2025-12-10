@@ -634,7 +634,7 @@ body.night #particles-js {
 .certification-card {
   background: var(--card-bg);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.25rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-left: 4px solid var(--color-primary);
@@ -1479,7 +1479,7 @@ body.night .tech-card:hover {
 .info h3,
 .info h4,
 .info p {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* text-shadow removed */
 }
 
 /* Optional: Add a subtle overlay for better text readability */
